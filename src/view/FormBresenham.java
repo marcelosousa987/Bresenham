@@ -87,14 +87,11 @@ public class FormBresenham extends javax.swing.JFrame {
             .addGroup(jpPixelsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jpPixelsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpPixelsLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jpComodidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jpPixelsLayout.createSequentialGroup()
-                        .addGroup(jpPixelsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpPixelsLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jpComodidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jpPixelsLayout.createSequentialGroup()
-                                .addComponent(jLabel7)
-                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(jLabel7)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jpPixelsLayout.createSequentialGroup()
                         .addComponent(jLabel5)
@@ -209,6 +206,7 @@ public class FormBresenham extends javax.swing.JFrame {
         rdoGrade.setSelected(true);
         rdoGrade.setText("Exibir grade");
 
+        rdoBresenham.setSelected(true);
         rdoBresenham.setText("Bresenham");
 
         jLabel8.setText("Pixel Size");
